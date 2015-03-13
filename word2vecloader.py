@@ -1,7 +1,7 @@
 import gensim, logging
 
 #convert trainingtext.txt into lists
-text = "/home/vincent/Desktop/models/isistrainingtext.txt"
+text = "insert file location"
 training = open(text, 'r')
 somelist = []
 for line in training.readlines():
