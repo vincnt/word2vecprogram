@@ -1,18 +1,18 @@
 import gensim, logging
 
 #convert trainingtext.txt into lists
-text = "insert file location"
+text = ""
 training = open(text, 'r')
-somelist = []
+listOfText = []
 for line in training.readlines():
     words = line.strip().split(' ')
-    somelist.append(words)
+    listOfText.append(words)
 
 #print somelist
 training.close()
 
 #train on text
-model = gensim.models.Word2Vec(somelist, min_count = 1)
+model = gensim.models.Word2Vec(listOfText, min_count = 1)
 print '-----------------------------------------------'
 print 'trained on ' + text
 print
@@ -50,7 +50,7 @@ def vectors():
     word = raw_input('Enter word:')
     print model[word]
 ###############################################################
-while True:
+while  __name__ == "__main__":
     try:
         functionchosen = raw_input('choose function:')
         print
