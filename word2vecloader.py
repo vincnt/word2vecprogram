@@ -50,21 +50,22 @@ def vectors():
     word = raw_input('Enter word:')
     print model[word]
 ###############################################################
-while  __name__ == "__main__":
-    try:
-        functionchosen = raw_input('choose function:')
-        print
-        if(functionchosen == 'PosMinusNeg'):
-            posminusneg()
-        if(functionchosen == 'similarity'):
-            similarity()
-        if(functionchosen == 'oddoneout'):
-            oddoneout()
-        if(functionchosen == 'vectors'):
-            vectors()
-    except KeyboardInterrupt:
-        print
-        break
-    except:
-        print 'error'
-        continue
+if  __name__ == "__main__":
+    while True:
+        try:
+            functionchosen = raw_input('choose function:')
+            print
+         if(functionchosen == 'PosMinusNeg'):
+               posminusneg()
+            if(functionchosen == 'similarity'):
+                similarity()
+          if(functionchosen == 'oddoneout'):
+               oddoneout()
+            if(functionchosen == 'vectors'):
+                vectors()
+        except KeyboardInterrupt:
+           print
+            break
+        except:
+            print 'error'
+          continue
